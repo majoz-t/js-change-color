@@ -1,4 +1,5 @@
 import { changeStyles } from "./partOne.js";
 
+let button = documents.getElementbyId("mybutton");
 
-//Aquí codificaremos el evento que disparará el botón "Click me"
+button.addEvenListener("Click", changeColor)
