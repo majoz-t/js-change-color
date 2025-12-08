@@ -1,3 +1,4 @@
 import { changeStyles } from "./partTwo.js";
 
-//Aquí codificaremos el evento que disparará el botón "Click me"
+const buttonclick = document.getElementById('mybutton');
+buttonclick.addEventListener('click', changeStyles);
