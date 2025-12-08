@@ -1,5 +1,3 @@
 import { changeStyles } from "./partOne.js";
-
-let button = documents.getElementbyId("mybutton");
-
-button.addEvenListener("Click", changeColor)
+const buttonclick = document.getElementById('mybutton');
+buttonclick.addEventListener('click', changeStyles);

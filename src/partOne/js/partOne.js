@@ -1,19 +1,20 @@
 //I parte, cambiar color y texto a darkblue
-console.log(document.getElementById("conteiner"))
-backgroundMock.classList.add("container");
-let backgroundMock= document.getElementById("conteiner")
+
+const backColor= document.querySelector('.color');
+const mybackground = document.getElementById('conteiner');
 
 function changeColor(){
-  backgroundMock.style.backgroundColor:#00008B;
+    mybackground.style.background= '#000087';
 };
 
 function changeText(){
-    //Escribe tu código aquí
+    backColor.textContent= 'darkblue';
 }; 
 
 function changeStyles(){
-    //Escribe tu código aquí
+    changeColor();
+    changeText();
 };
 
-export {changeColor, changeText, changeStyles}
+export {changeColor, changeText, changeStyles};
 
