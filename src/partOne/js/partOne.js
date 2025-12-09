@@ -1,14 +1,13 @@
 //I parte, cambiar color y texto a darkblue
 
-const backColor= document.querySelector('.color');
-const mybackground = document.getElementById('conteiner');
-
 function changeColor(){
-    mybackground.style.background= '#000087';
+    const backgroundMock = document.getElementById('background');
+    backgroundMock.style.backgroundColor= "darkblue";
 };
 
 function changeText(){
-    backColor.textContent= 'darkblue';
+    const textMock= document.getElementById("text");
+    textMock.innerHTML= "darkblue";
 }; 
 
 function changeStyles(){
