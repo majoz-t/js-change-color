@@ -1,22 +1,21 @@
 //II parte, refactorizar para hacer toggle, nos basaremos en lo que hicimos en el archivo partOne.js
-const backColor= document.querySelector('.color');
-const mybackground = document.getElementById('conteiner');
 
 function changeColor(){
-    const actualColor= window.getComputedStyle(mybackground).backgroundColor;;
-    const dred='rgb(255,0,0)';
-    const dBlue='rgb(0, 0, 135)';
-    if (actualColor === dred){
-        mybackground.style.backgroundColor= dBlue;    
+    const backgroundMock = document.getElementById('background');
+    const actualColor= backgroundMock.style.backgroundColor;
+    if (actualColor === 'red' || actualColor === 'rgb(255,0,0)' || actualColor === ""){
+        backgroundMock.style.backgroundColor= 'darkblue';    
 }   else {
-        mybackground.style.backgroundColor= dred;
+        backgroundMock.style.backgroundColor= 'red';
 }};
+
 function changeText(){
-    const actualText= backColor.textContent;
-   if (actualText === 'red'){
-     backColor.textContent= 'darkblue';
+    const textMock= document.getElementById("text");
+    const actualText= textMock.innerHTML;
+   if (actualText === 'red' ){
+     textMock.innerHTML= 'darkblue';
 }  else{
-     backColor.textContent= 'red';
+     textMock.innerHTML= 'red';
 }};
 
 function changeStyles(){

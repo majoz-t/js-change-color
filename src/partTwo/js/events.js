@@ -1,4 +1,4 @@
 import { changeStyles } from "./partTwo.js";
 
-const buttonclick = document.getElementById('mainbutton');
+const buttonclick = document.getElementById('mybutton');
 buttonclick.addEventListener('click', changeStyles);
